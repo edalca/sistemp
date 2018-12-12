@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Sectores extends Migration
+class FrecuenciaPagos extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class Sectores extends Migration
      */
     public function up()
     {
-        Schema::create('sectores', function (Blueprint $table) {
+        Schema::create('frecuencia_pagos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('codigo',20);
-            $table->string('sector',50);
-            $table->unsignedInteger('sector_niveles_id');
-            $table->unsignedInteger('municipios_id');
-            $table->foreign('sector_niveles_id')->references('id')->on('sector_niveles');
-            $table->foreign('municipios_id')->references('id')->on('municipios');
+            $table->string('frecuencia_pago',50);
+            $table->integer('frecuencia_dias');
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class Sectores extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sectores');
+        Schema::dropIfExists('frecuencia_pagos');
     }
 }

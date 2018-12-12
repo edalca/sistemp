@@ -44771,7 +44771,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, "\n.full-height[data-v-1ae8ae93] {\n        height: 100vh;\n}\n.flex-center[data-v-1ae8ae93] {\n        -webkit-box-align: center;\n            -ms-flex-align: center;\n                align-items: center;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n}\n.position-ref[data-v-1ae8ae93] {\n        position: relative;\n}\n.top-right[data-v-1ae8ae93] {\n        position: absolute;\n        right: 10px;\n        top: 18px;\n}\n.content[data-v-1ae8ae93] {\n        text-align: center;\n}\n.title[data-v-1ae8ae93] {\n        font-size: 60px;\n}\n.links > a[data-v-1ae8ae93] {\n        color: #636b6f;\n        padding: 0 25px;\n        font-size: 12px;\n        font-weight: 600;\n        letter-spacing: .1rem;\n        text-decoration: none;\n        text-transform: uppercase;\n}\n.m-b-md[data-v-1ae8ae93] {\n        margin-bottom: 30px;\n        color: #000000;\n}\n", ""]);
+exports.push([module.i, "\n.full-height[data-v-1ae8ae93] {\r\n        height: 100vh;\n}\n.flex-center[data-v-1ae8ae93] {\r\n        -webkit-box-align: center;\r\n            -ms-flex-align: center;\r\n                align-items: center;\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-pack: center;\r\n            -ms-flex-pack: center;\r\n                justify-content: center;\n}\n.position-ref[data-v-1ae8ae93] {\r\n        position: relative;\n}\n.top-right[data-v-1ae8ae93] {\r\n        position: absolute;\r\n        right: 10px;\r\n        top: 18px;\n}\n.content[data-v-1ae8ae93] {\r\n        text-align: center;\n}\n.title[data-v-1ae8ae93] {\r\n        font-size: 60px;\n}\n.links > a[data-v-1ae8ae93] {\r\n        color: #636b6f;\r\n        padding: 0 25px;\r\n        font-size: 12px;\r\n        font-weight: 600;\r\n        letter-spacing: .1rem;\r\n        text-decoration: none;\r\n        text-transform: uppercase;\n}\n.m-b-md[data-v-1ae8ae93] {\r\n        margin-bottom: 30px;\r\n        color: #000000;\n}\r\n", ""]);
 
 // exports
 
@@ -45115,12 +45115,14 @@ var staticRenderFns = [
       _c("div", { staticClass: "content" }, [
         _c("div", { staticClass: "m-b-md" }, [
           _c("h2", { staticClass: "title m-b-md" }, [
-            _vm._v("\n                        Treclon\n                    ")
+            _vm._v(
+              "\r\n                        Treclon\r\n                    "
+            )
           ]),
           _vm._v(" "),
           _c("h3", [
             _vm._v(
-              "\n                        Your efficent task planner\n                    "
+              "\r\n                        Your efficent task planner\r\n                    "
             )
           ])
         ])
