@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class PlanillaDetalles extends Migration
+class Asistencias extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,12 @@ class PlanillaDetalles extends Migration
      */
     public function up()
     {
-        Schema::create('planilla_detalles', function (Blueprint $table) {
+        Schema::create('asistencias', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('codigo',20);
+            $table->date('fecha');
             $table->unsignedInteger('planillas_id');
             $table->foreign('planillas_id')->references('id')->on('planillas');
-            $table->unsignedInteger('contratos_id');
-            $table->foreign('contratos_id')->references('id')->on('contratos');
-            $table->date('fecha');
-            $table->decimal('monto',15,2);
-            $table->boolean('base');
-            $table->boolean('devengado');
-            $table->boolean('deduccion');
             $table->timestamps();
         });
     }
@@ -35,6 +30,6 @@ class PlanillaDetalles extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('planilla_detalles');
+        Schema::dropIfExists('asistencias');
     }
 }
