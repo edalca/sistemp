@@ -9,15 +9,15 @@ Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 
 import App from './views/App'
-import Welcome from './views/Welcome'
+import Inicio from './views/Inicio'
 
 const router = new VueRouter({
     mode: 'history',
     routes: [
         {
             path: '/',
-            name: 'home',
-            component: Welcome
+            name: 'Inicio',
+            component: Inicio
         },
     ],
 });
